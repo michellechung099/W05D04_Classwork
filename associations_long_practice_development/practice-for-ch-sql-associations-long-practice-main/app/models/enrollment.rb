@@ -9,7 +9,7 @@
 #  updated_at :datetime         not null
 #
 class Enrollment < ApplicationRecord
-  belongs_to :user,
+  belongs_to :student,
     primary_key: :id,
     foreign_key: :student_id,
     class_name: :User
